@@ -1,0 +1,13 @@
+list=[45,65,34]
+list.append(53)
+print(list)
+list.sort()
+print(list)
+list.sort(reverse=True)
+print(list)
+list.reverse
+print(list)
+list.insert(2,5)
+print(list)
+list.pop(2)
+print(list)

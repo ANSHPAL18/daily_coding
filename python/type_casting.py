@@ -1,0 +1,5 @@
+a=int(3)
+b=float(2.34)
+print(type(b))
+print(type(a))
+print(a+b)
