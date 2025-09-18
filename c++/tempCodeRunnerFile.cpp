@@ -1,20 +1,17 @@
 #include<iostream>
+#include<limits.h>
+#include<vector>
 using namespace std;
 int main(){
-    string s;
-   getline(cin,s);
-    cout<<s<<endl;
-    cout<<s.size()<<endl;
-    string s1="ansh",s2="pal";
-    cout<<s1.append(s2);
-    string s4="AI is a useful \"tool\"";
-    cout<<s4<<endl;
-    string s5="ANSH PAL";
-    int n=s5.size();
-    int st=0,end=n-1;
-    while(st<=end){
-        swap(s5[st],s5[end]);
-        st++,end--;
+    vector <int> vec={2,5,4,3-2,2};
+    int n=5;
+    int cs=0,ms=INT_MIN;
+    for(int val:vec){
+           cs+=val;
+           ms=max(cs,ms);
+           if(cs<0){
+            cs=0;
+           }
     }
-    cout<<s5;
+        cout<<ms;
 }

@@ -1,33 +1,14 @@
-#include<stdio.h>
-void linear(int a[],int n,int x){
-    int flg=1,i;
-        for(i=0;i<n;i++){
-        if(a[i]==x){
-           flg=0;
-           break;
-        }
-        }
-      if(flg==0){
-        printf("element found at %dth position",i+1);
-      }
-      else{
-        printf("element not found in this given array");
-      }
-    
-   
+#include <stdio.h>
+void sum(int arr[],int n){
+    int i,sum=0;
+    for(i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    printf("%d",sum);
+
 }
 int main(){
-   int n;
-   printf("enter size=");
-   scanf("%d",&n);
-   int a[n];
-   for (int  i = 0; i <n; i++)
-   {
-     scanf("%d",&a[i]);
-   }
-   int x;
-   printf("element to be searched=");
-   scanf("%d",&x);
-   linear(a,n,x);
-   
+    int arr[2];
+    sum(arr,2);
+    return 0;
 }

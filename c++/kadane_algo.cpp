@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector <int> vec={2,5,4,3,2};
+    vector <int> vec={2,5,4,3-2,2};
     int n=5;
     int cs=0,ms=INT_MIN;
     for(int val:vec){
