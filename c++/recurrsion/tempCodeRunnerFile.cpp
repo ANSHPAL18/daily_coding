@@ -14,7 +14,6 @@ int binary(int arr[],int st,int x,int end){
     else{
     return binary(arr,mid+1,x,end);
     }
-
 }
 int main(){
     int arr[]={2,4,13,5,6,41};
