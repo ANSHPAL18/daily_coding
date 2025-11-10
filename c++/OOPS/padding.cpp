@@ -10,6 +10,6 @@ class a{
 };
 int main(){
     a obj;
-    cout<<sizeof(obj)<<endl;
+    cout<<sizeof(obj)<<" ";
 
 }
