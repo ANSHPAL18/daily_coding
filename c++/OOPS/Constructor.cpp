@@ -5,19 +5,30 @@ class customer{
     int account_number;
     int balance;
     public:
+    //default constructor
     customer(){
         name="Rohit";
         account_number=123;
         balance=450;
     }
-    customer(string a,int b,int c){
-        name=a;
-        account_number=b;
-        balance=c;
+    //parameterised 
+    // customer(string a,int b,int c){
+    //     name=a;
+    //     account_number=b;
+    //     balance=c;
+    // }
+    //constructor overloading
+    // customer(string name,int account_number,int balance){
+    //    this->name=name;
+    //     this->account_number=account_number;
+    //    this->balance=balance;
+    // }
+    //inline constructor
+    inline customer(string a,int b,int c): name(a),account_number(b),balance(c){
     }
-    customer(string a,int b){
-        name=a;
-        account_number=b;
+    customer(string c,int d){
+        name=c;
+        account_number=d;
     }
     void display(){
         cout<<name<<" "<<account_number<<" "<<balance<<endl;
@@ -27,9 +38,11 @@ class customer{
 };
 int main(){
     customer A1;
-    customer A3("kunal",345654);
-    customer A2("ansh",3432,5000);
+    // customer A2("ansh",3432,5000);
+    customer A3("kunal",345654,423);
+    customer A4("spark",3453);
     A1.display();
-    A2.display();
+    // A2.display();
     A3.display();
+    A4.display();
 }
