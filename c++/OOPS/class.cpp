@@ -16,7 +16,7 @@ class student{
           age=a;
     }
     void setroll_number(int r){
-        if(roll_number<0) cout<<"invalid roll number"<<endl;
+        if(roll_number<0) cout<<"invalid roll number "<<endl;
           roll_number=r;
     }
     void setgrade(string b){
@@ -41,7 +41,7 @@ int main(){
     s1.setname("");
     s1.setage(20);
     s1.setroll_number(47);
-    s1.setgrade("A+");
+    s1.setgrade("A");
     s1.getname();
     s1.getage();
    cout<<s1.getgrade(123)<<endl;
