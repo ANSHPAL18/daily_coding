@@ -2,35 +2,47 @@
 using namespace std;
 class customer{
     string name;
-    int *data;
+    int account_number;
+    int balance;
     public:
-    customer(string name){
-        this->name=name;
-        cout<<"constructor is"<<name<<endl;
+    //default constructor
+    customer(){
+        name="Rohit";
+        account_number=123;
+        balance=450;
     }
-    ~customer(){
-        cout<<"constructor is"<<name<<endl;
+    //parameterised 
+    // customer(string a,int b,int c){
+    //     name=a;
+    //     account_number=b;
+    //     balance=c;
+    // }
+    //constructor overloading
+    // customer(string name,int account_number,int balance){
+    //    this->name=name;
+    //     this->account_number=account_number;
+    //    this->balance=balance;
+    // }
+    //inline constructor
+    inline customer(string a,int b,int c): name(a),account_number(b),balance(c){
     }
-    // int acc;
-    // int balance;
-    // int *data;
-    // public:
-    // customer(){
-    //     name="ansh";
-    //     acc=454;
-    //     balance=3;
-    //     data=new int;
-    //     *data=10;
-    //     cout<<"constructor is called"<<endl;
-    // }
-    // ~customer(){
-    //     delete data;
-    //     cout<<"destructor is called";
-    // }
+    customer(string c,int d){
+        name=c;
+        account_number=d;
+    }
+    void display(){
+        cout<<name<<" "<<account_number<<" "<<balance<<endl;
+    }
+
+    
 };
-using namespace std;
 int main(){
-    // customer A1;
-    customer A1("1"),A2("2"),A3("3");
-    return 0;
+    customer A1;
+    // customer A2("ansh",3432,5000);
+    customer A3("kunal",345654,423);
+    customer A4("spark",3453);
+    A1.display();
+    // A2.display();
+    A3.display();
+    A4.display();
 }
