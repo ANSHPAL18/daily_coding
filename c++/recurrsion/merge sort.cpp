@@ -2,7 +2,6 @@
 #include<vector>
 using namespace std;
 void merge(int arr[],int start,int mid,int end){
-
     vector<int>temp(end-start+1);
     int left=start,right=mid+1,index=0;
     while(left<=mid&&right<=end){
@@ -53,6 +52,4 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
-
 }
